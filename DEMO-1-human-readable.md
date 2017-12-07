@@ -31,3 +31,6 @@ http://api.biodiversitydata.nl/v2/specimen/query/?identifications.defaultClassif
 
 ## (10) Get two fields
 http://api.biodiversitydata.nl/v2/specimen/query/?identifications.defaultClassification.genus=Hydrochoerus&_fields=unitGUID,preparationType
+
+## (11) Sort by a field
+http://api.biodiversitydata.nl/v2/geo/query/?areaType=Country&_fields=locality&_sortFields=locality:ASC
