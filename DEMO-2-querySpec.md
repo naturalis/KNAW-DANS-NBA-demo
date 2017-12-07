@@ -67,7 +67,7 @@ gives more results, why?
      ]
     }
 
-## (4) Searching for non-exitsing values
+## (4) Searching for non-existing values
 How many records are not geo-referenced?
 
     {
