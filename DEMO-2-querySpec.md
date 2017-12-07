@@ -29,10 +29,12 @@ http://api.biodiversitydata.nl/v2/geo/query/?locality=Zimbabwe
        {
          "field": "gatheringEvent.siteCoordinates.geoShape",
          "operator": "IN",
-         "value": "10610481@COL"
+         "value": "1004149@GEO"
        }
      ]
     }
+
+But, more directly:
 
     {
      "conditions": [
@@ -40,6 +42,27 @@ http://api.biodiversitydata.nl/v2/geo/query/?locality=Zimbabwe
          "field": "gatheringEvent.siteCoordinates",
          "operator": "IN",
          "value": "Zimbabwe"
+       }
+     ]
+    }
+
+**But:** 
+http://api.biodiversitydata.nl/v2/specimen/query/?gatheringEvent.country=Zimbabwe
+gives more results, why?
+
+## (3) Get all specimens collected in the Netherlands but not in Noord-Holland
+
+    {
+     "conditions": [
+       {
+         "field": "gatheringEvent.siteCoordinates.geoShape",
+         "operator": "IN",
+         "value": "Netherlands"
+       },
+       {
+         "field": "gatheringEvent.siteCoordinates.geoShape",
+         "operator": "NOT_IN",
+         "value": "Noord-Holland"
        }
      ]
     }
