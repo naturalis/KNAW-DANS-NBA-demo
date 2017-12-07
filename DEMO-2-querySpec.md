@@ -69,6 +69,7 @@ gives more results, why?
 
 ## (4) Searching for non-exitsing values
 How many records are not geo-referenced?
+
     {
      "conditions": [
        {
