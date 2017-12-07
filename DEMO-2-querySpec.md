@@ -85,4 +85,33 @@ How many records are not geo-referenced?
      ]
     }
 
+## (5) Get all specimen collected before 1900
+    
+    {
+     "conditions": [
+       {
+         "field": "gatheringEvent.dateTimeBegin",
+         "operator": "LT",
+         "value": "1900"
+       }
+       ],
+        "sortFields": [{"path": "gatheringEvent.dateTimeBegin", "sortOrder": "desc"}]
+    }
+
+## (6) All specimens collected between 1800 and now
+
+     {
+      "conditions": [
+        {
+          "field": "gatheringEvent.dateTimeBegin",
+          "operator": "BETWEEN",
+          "value": [
+            "1800-01-01",
+            "2018-01-01"
+          ]
+        }
+      ],
+       "sortFields": [{"path": "gatheringEvent.dateTimeBegin", "sortOrder": "asc"}]
+    }
+
 
