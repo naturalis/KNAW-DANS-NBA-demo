@@ -67,4 +67,21 @@ gives more results, why?
      ]
     }
 
+## (4) Searching for non-exitsing values
+How many records are not geo-referenced?
+    {
+     "conditions": [
+       {
+         "field": "gatheringEvent.siteCoordinates.latitudeDecimal",
+         "operator": "NOT_EQUALS",
+         "value": null
+       },
+      {
+         "field": "gatheringEvent.siteCoordinates.longitudeDecimal",
+         "operator": "NOT_EQUALS",
+         "value": null
+       }
+     ]
+    }
+
 
