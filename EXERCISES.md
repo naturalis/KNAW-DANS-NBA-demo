@@ -5,4 +5,7 @@
 ## (3) Find a photo of a Nautilus
 
 ## (4) How many records were collected before 1900?
+and ... can we be sure?
+
+## (5) How many different collectors have contributed to the specimen collection?
 
