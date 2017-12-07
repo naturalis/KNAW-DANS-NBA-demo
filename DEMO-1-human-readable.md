@@ -17,3 +17,17 @@ http://api.biodiversitydata.nl/v2/multimedia/metadata/getFieldInfo
 ## (5) Query which formats exist in multimedia documents
 http://api.biodiversitydata.nl/v2/multimedia/getDistinctValues/serviceAccessPoints.format
 
+## (6) Get a video
+http://api.biodiversitydata.nl/v2/multimedia/query/?serviceAccessPoints.format=video/mp4
+
+## (7) Get list of collections
+http://api.biodiversitydata.nl/v2/specimen/dwca/getDataSetNames
+
+## (8) Download DWCA file for mammals collection
+http://api.biodiversitydata.nl/v2/specimen/dwca/getDataSet/mammalia
+
+## (9) Get certain field of data
+http://api.biodiversitydata.nl/v2/specimen/query/?identifications.defaultClassification.genus=Hydrochoerus&_fields=unitGUID
+
+## (10) Get two fields
+http://api.biodiversitydata.nl/v2/specimen/query/?identifications.defaultClassification.genus=Hydrochoerus&_fields=unitGUID,preparationType
