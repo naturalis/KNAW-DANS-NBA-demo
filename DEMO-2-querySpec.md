@@ -114,4 +114,14 @@ How many records are not geo-referenced?
        "sortFields": [{"path": "gatheringEvent.dateTimeBegin", "sortOrder": "asc"}]
     }
 
+## (7) Are there fossils of Mackarel sharks (Lamniformes) dated to be from the Crateceous or Paloecene?
+
+    {  
+	    "conditions" : [    
+		    { "field" : "identifications.defaultClassification.order", "operator" : "EQUALS", "value" : "Lamniformes" },    
+		    { "field" : "gatheringEvent.chronoStratigraphy.youngChronoName", "operator" : "IN", 
+		      "value" : [      "Paleocene", "Cretaceous" ] }  
+	    ],  
+	    "logicalOperator" : "AND",  "from" : 0,  "size" : 100
+    }
 
