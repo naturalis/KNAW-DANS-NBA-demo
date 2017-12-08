@@ -12,5 +12,4 @@ using the *_querySpec* parameter, you can use the [NBA query scratchpad](http://
 ### (4) How many records were collected before 1900?
 and ... can we be sure?
 
-### (5) How many different collectors have contributed to the specimen collection?
-
+### (5) Which collector contributed the most to our specimen collection?
