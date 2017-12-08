@@ -13,3 +13,5 @@ using the *_querySpec* parameter, you can use the [NBA query scratchpad](http://
 and ... can we be sure?
 
 ### (5) Which collector contributed the most to our specimen collection?
+
+### (6) List all countries in which specimens from the Genus Rheum were collected between 1900 and 1950
