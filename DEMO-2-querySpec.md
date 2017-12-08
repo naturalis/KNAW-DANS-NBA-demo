@@ -118,8 +118,10 @@ How many records are not geo-referenced?
 
     {  
 	    "conditions" : [    
-		    { "field" : "identifications.defaultClassification.order", "operator" : "EQUALS", "value" : "Lamniformes" },    
-		    { "field" : "gatheringEvent.chronoStratigraphy.youngChronoName", "operator" : "IN", 
+		    { "field" : "identifications.defaultClassification.order", 
+		      "operator" : "EQUALS", "value" : "Lamniformes" },    
+		    { "field" : "gatheringEvent.chronoStratigraphy.youngChronoName", 
+		      "operator" : "IN", 
 		      "value" : [      "Paleocene", "Cretaceous" ] }  
 	    ],  
 	    "logicalOperator" : "AND",  "from" : 0,  "size" : 100
