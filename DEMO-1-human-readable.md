@@ -34,3 +34,8 @@ http://api.biodiversitydata.nl/v2/specimen/query/?identifications.defaultClassif
 
 ## (11) Sort by a field
 http://api.biodiversitydata.nl/v2/geo/query/?areaType=Country&_fields=locality&_sortFields=locality:ASC
+
+## (12) The *count* endpoint
+http://api.biodiversitydata.nl/v2/specimen/count
+http://api.biodiversitydata.nl/v2/specimen/count/?collectionType=Botany
+
